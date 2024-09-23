@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <div class="backvideo">
+        <video autoplay loop  muted >
+            <source src="1.mp4" type="video/mp4">
+        </video>
+        <div class="sound">   
+            <audio controls autoplay loop   >
+           <source src="12.mp3" type="audio/mp3">
+           </audio>
+           </div>
+        <!-- <video autoplay  muted >
+            <source src="2.mp4" type="video/mp4">
+        </video>
+        <video autoplay  muted >
+            <source src="3.mp4" type="video/mp4">
+        </video>
+        <video autoplay  muted >
+            <source src="4.mp4" type="video/mp4">
+        </video> -->
+    </div>
+    <div id="time">
+            <div class="circle" style="--clr:#ff2972;">
+                    <div class="dots hr_dot"></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" id="hh"></circle>
+                    </svg>
+            <div id="hours">00</div>
+            </div>
+            <div class="circle" style="--clr:#fee800;">
+                <div class="dots min_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="mm"></circle>
+                </svg>
+                <div id="minutes">00</div>
+            </div>
+            <div class="circle" style="--clr:#04fc43;">
+                <div class="dots sec_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss"></circle>
+                </svg>
+                <div id="seconds">00</div>
+            </div>
+            <div class="ap">
+                <div id="ampm">AM</div>
+            </div>
+        </div>
+        <script src="time.js">
+            // setInterval(()=>{
+            //     let hours = document.getElemenById('hours');
+            //     let minutes = document.getElemenById('minutes');
+            //     let seconds = document.getElemenById('seconds');
+            //     let ampm = document.getElemenById('ampm');
+
+            //     let hh = docment.getElementById('hh');
+            //     let mm = docment.getElementById('mm');
+            //     let ss = docment.getElementById('ss');
+
+            //     let hr_dot = document.querySelector('.hr_dot');
+            //     let min_dot = document.querySelector('.min_dot');
+            //     let sec_dot = document.querySelector('.sec_dot');
+
+            //     let h = new Date().getHours();
+            //     let m = new Date().getMinutes();
+            //     let s = new Date().getSeconds();
+            //     let am = h >=12? "PM" : "AM";
+
+            //     if(h > 12){
+            //     h = h -12;
+            //     }
+
+            //     h = (h <10) ? "0" + h : h;
+            //     m = (m <10) ? "0" + m : m;
+            //     s = (s <10) ? "0" + s : s;
+
+            //     hours.innerHTML = h ;
+            //     minutes.innerHTML = m ;
+            //     seconds.innerHTML = s ;
+
+            //     ampm.innerHTML=am;
+            //     hh.style.strokeDashoffset = 440 - (440 + h) / 12;
+            //     mm.style.strokeDashoffset = 440 - (440 + m) / 60;
+            //     ss.style.strokeDashoffset = 440 - (440 + s) / 60;
+
+            //     hr_dot.style.transform = ` rotate(${h * 30}deg)`;
+            //     min_dot.style.transform = ` rotate(${m * 6}deg)`;
+            //     sec_dot.style.transform = ` rotate(${s * 6}deg)`;
+                
+            // })
+        </script>
+    
+</body>
+</html>
